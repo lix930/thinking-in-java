@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="589c799a-d21d-4bc1-b7c3-1be294980b1f" name="Default" comment="" />
+    <list default="true" id="ea4dda82-3daf-461e-99a1-7a0c2f23b82f" name="Default" comment="" />
     <ignored path="test.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -19,17 +19,14 @@
   <component name="FavoritesManager">
     <favorites_list name="test" />
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
       <projects_view />
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="582" />
-    <option name="y" value="50" />
+    <option name="x" value="343" />
+    <option name="y" value="34" />
     <option name="width" value="1400" />
     <option name="height" value="945" />
   </component>
@@ -58,7 +55,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -70,6 +66,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -166,16 +163,16 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="589c799a-d21d-4bc1-b7c3-1be294980b1f" name="Default" comment="" />
-      <created>1473325355999</created>
+      <changelist id="ea4dda82-3daf-461e-99a1-7a0c2f23b82f" name="Default" comment="" />
+      <created>1473325442274</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1473325355999</updated>
+      <updated>1473325442274</updated>
     </task>
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="582" y="50" width="1400" height="945" extended-state="0" />
+    <frame x="343" y="34" width="1400" height="945" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
