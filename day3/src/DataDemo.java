@@ -1,3 +1,4 @@
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**
@@ -15,6 +16,9 @@ public class DataDemo {
             System.out.println("day1 after day2");
         else
             System.out.println("day1 before day2");
+
+        SimpleDateFormat ft = new SimpleDateFormat("E yyyy年MM月dd日 'at' hh:mm:ss a zzz");
+        System.out.println("Current Date: " + ft.format(day1));
 
     }
 }
