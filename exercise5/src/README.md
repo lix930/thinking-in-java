@@ -123,42 +123,5 @@ StringBuffer 类常见的构造方法：
 
 
 ## Math类
-java.langMath提供了一系列静态方法用于科学计算； 其方法的参数和返回值类型一般为double型
-
-- abs
-- acos, asin, atan, cos, sin, tan
-- sqrt
-- pow(double a, double b)     a的b次幂
-- log
-- exp     e为底指数
-- max(double a, double b)
-- min(double a, double b)
-- random()        返回0.0到1.0的随机数
-- long round(double a)        double型的数据a转换为long型（四舍五入）
-- toDegrees(double angrad)   弧度->角度
-- toRadians(double angdeg)   角度->弧度
-
 ## File类
-java.io.File 类代表系统文件名（路径和文件名）
-常见构造方法：
-- public File(String pathname)
-- public File(String parent, String child)
-  方法
-- public boolean canRead()
-- public boolean canWrite()
-- public boolean exists()
-- public boolean isDirectory()
-- public boolean ifFile()
-- public boolean isHidden()
-- public long lastModified()
-- public long length()
-- public String getName()
-- public String getPath()
-
-
-- public boolean createNewFile() throws IOExecption
-- public boolean delete()
-- public boolean mkdir()
-- public boolean mkdirs() 
-
-
+## 枚举类 
