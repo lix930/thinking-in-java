@@ -80,8 +80,22 @@ public class StringTest {
  String sp = s1.trim();
  System.out.println(sp); //sun java
  ```
- 
- 
+- public static String valueOf(...) 
+- public String[] split(String regex)
+ ```java
+ public class Test {
+     public static void main(String[] args) {
+         int j = 1234567;
+         String sNumber = String.valueOf(j);
+         System.out.println("j 是" + sNumber.length() + "位数。");
+         String s = "Mary, F, 1976";
+         String[] sPlit = s.split(",");
+         for (int i=0; i<sPlit.lentgh; i++) {
+             System.out.println(sPlit[i]);
+         }
+     }
+ }
+ ```
 ## 基本数据类型包装类
 ## Math类
 ## File类
