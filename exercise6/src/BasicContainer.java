@@ -4,6 +4,8 @@ import java.util.*;
  */
 public class BasicContainer {
     public static void main(String[] args) {
+
+
         Collection c = new HashSet();
 
         c.add(new Name("f2", "l2"));
@@ -19,14 +21,26 @@ public class BasicContainer {
                 // 如果换成 c.remove(name) 则会产生 错误
             }
         }
+    //    Collections.sort(N);
         System.out.println(c);
     //    c.remove("hello");
     //    c.remove(100);
 
+
+
+        LinkedList l1 = new LinkedList();
+        l1.add(new Name("xiang","li"));
+        l1.add(new Name("du","lin"));
+        l1.add(new Name("yunlong","lin"));
+        l1.add(new Name("xiang","liu"));
+        Collections.sort(l1);
+        System.out.println("sorted list: " + l1);
+
     }
 }
-
-class Name {
+// 要实现Comparable接口
+// 重写 compareTo 方法
+class Name implements Comparable{
     private String firstName, lastName;
 
     public Name(String f, String l) {
@@ -59,5 +73,11 @@ class Name {
     @Override
     public int hashCode() {
         return firstName.hashCode();
+    }
+
+    public int compareTo (Object o) {
+        Name n = (Name)o;
+        int lastCmp = lastName.compareTo(n.lastName);
+        return (lastCmp != 0 ? lastCmp : firstName.compareTo(n.firstName));
     }
 }
