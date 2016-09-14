@@ -3,6 +3,22 @@
  */
 import java.util.*;
 
+class MyThread extends Thread {
+    boolean flag = true;
+
+    public void run() {
+        while(flag) {
+            System.out.println("===" + new Date() + "===");
+            try {
+                sleep(1000); // 1000ms = 1s
+            } catch (InterruptedException e){
+                System.out.println("interrupted exception");
+                return;
+
+            }
+        }
+    }
+}
 public class TestInterrupt {
     public static void main(String[] args) {
         MyThread thread = new MyThread();
@@ -17,18 +33,3 @@ public class TestInterrupt {
     }
 }
 
-class MyThread extends Thread {
-    boolean flag = true;
-
-    public void run() {
-        while(flag) {
-            System.out.println("===" + new Date() + "===");
-            try {
-                sleep(1000); // 1000ms = 1s
-            } catch (InterruptedException e){
-                System.out.println("interrupted exception");
-                return;
-            }
-        }
-    }
-}
