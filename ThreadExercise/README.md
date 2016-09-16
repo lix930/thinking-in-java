@@ -21,3 +21,8 @@ notifyAll()
 ```java
 synchronized public void add(String name) {...}
 ```
+
+## Wait sleep 的区别
+-  Wait 时别的线程可以访问锁定对象
+  ** 调用wait方法的时候必须锁定该方法 **
+-  Sleep时别的线程也不可以访问锁定对象
