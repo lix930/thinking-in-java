@@ -1,4 +1,5 @@
 /**
+ * 线程同步  锁 synchronized
  * Created by fish-Xiang on 2016/9/14.
  */
 public class TestSync implements Runnable{
@@ -27,13 +28,16 @@ public class TestSync implements Runnable{
 
 class Timer {
     private static int num = 0;
-    public void add(String name) {
-        num ++;
-        try {
-            Thread.sleep(1);
-        } catch (InterruptedException e) {
-        }
-        System.out.println(name + ",你是第" + num + "个使用timer的线程");
+    public synchronized void add(String name) {
+        // 锁
+        //synchronized(this) {
+            num++;
+            try {
+                Thread.sleep(1);
+            } catch (InterruptedException e) {
+            }
+            System.out.println(name + ",你是第" + num + "个使用timer的线程");
+        //}
     }
 }
 
